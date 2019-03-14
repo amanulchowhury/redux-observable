@@ -15,7 +15,7 @@ const search = (apiBase, perPage, term) =>
 export function fetchBeers(action$, state$, { getJSON, document }) {
     return action$.pipe(
         ofType(SEARCH),
-        debounceTime(200),
+        debounceTime(500),
         filter(({payload}) => payload.trim() !== ''),
         withLatestFrom(
             state$.pipe(pluck('config'))

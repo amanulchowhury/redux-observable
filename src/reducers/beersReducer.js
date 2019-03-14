@@ -1,6 +1,6 @@
 import {FETCH_FULFILLED, SET_STATUS, FETCH_FAILED, RESET} from './beersActions';
 
-const initialState = {
+export const initialState = {
     data: [],
     loading: 'idle' // 'idle' | 'pending' | 'success' | 'failure'
 }
