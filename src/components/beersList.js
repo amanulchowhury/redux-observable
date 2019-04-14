@@ -7,7 +7,7 @@ export function BeersList(props) {
                 props.beers.map(beer => (
                     <div key={beer.id} className="App-list-item">
                         <figure className="App-list-item-img">
-                            <img src={beer.image_url} />
+                            <img src={beer.image_url} alt=""/>
                         </figure>
                         <div className="List-item-info">
                             <p>{beer.name}</p>

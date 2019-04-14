@@ -1,7 +1,7 @@
 import {
     map, switchMap, 
     debounceTime, filter, 
-    catchError, delay, takeUntil, mapTo, withLatestFrom, pluck
+    catchError, mapTo, withLatestFrom, pluck
 } from 'rxjs/operators';
 import { 
     fetchFulfilled, setStatus, SEARCH, fetchFailed, CANCEL, reset 
